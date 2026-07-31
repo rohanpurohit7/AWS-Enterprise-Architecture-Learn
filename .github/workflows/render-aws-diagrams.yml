@@ -6,8 +6,10 @@ on:
     branches:
       - master
     paths:
+      - 'AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/**'
       - 'AWS-Enterprise-Architecture-Handbook/docs/diagrams/aws-diagrams/**'
       - 'AWS-Enterprise-Architecture-Handbook/scripts/render_aws_diagrams.py'
+      - 'AWS-Enterprise-Architecture-Handbook/README.md'
       - '.github/workflows/render-aws-diagrams.yml'
 
 permissions:
@@ -69,6 +71,27 @@ jobs:
           print('All AWS diagram imports validated successfully')
           PY
 
+      - name: Validate architecture documentation coverage
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+
+          root = Path('AWS-Enterprise-Architecture-Handbook')
+          docs = root / 'docs' / 'reference-architectures'
+          sources = root / 'docs' / 'diagrams' / 'aws-diagrams'
+          article_stems = {p.stem for p in docs.glob('*.md')}
+          source_stems = {p.stem for p in sources.glob('*.py')}
+          missing = sorted(article_stems - source_stems)
+          if missing:
+              print('Reference architecture articles missing Python diagrams:')
+              for stem in missing:
+                  print(f' - {stem}.md -> expected {stem}.py')
+              raise SystemExit(1)
+          print(f'Architecture source coverage validated: {len(article_stems)}/{len(article_stems)}')
+          PY
+
       - name: Render professional AWS architecture diagrams
         run: python AWS-Enterprise-Architecture-Handbook/scripts/render_aws_diagrams.py
 
@@ -79,13 +102,17 @@ jobs:
           ROOT="AWS-Enterprise-Architecture-Handbook"
           source_count=$(find "$ROOT/docs/diagrams/aws-diagrams" -maxdepth 1 -type f -name '*.py' | wc -l)
           png_count=$(find "$ROOT/docs/diagrams/rendered" -maxdepth 1 -type f -name '*.png' | wc -l)
+          article_count=$(find "$ROOT/docs/reference-architectures" -maxdepth 1 -type f -name '*.md' | wc -l)
           echo "Python architecture source count: $source_count"
+          echo "Reference architecture article count: $article_count"
           echo "Rendered PNG count: $png_count"
           test "$source_count" -gt 0
           test "$png_count" -eq "$source_count"
+          test "$source_count" -ge "$article_count"
           test -f "$ROOT/docs/diagrams/README.md"
+          grep -q 'How GitHub Actions Builds the Diagrams' "$ROOT/docs/diagrams/README.md"
 
-      - name: Commit rendered diagrams
+      - name: Commit rendered diagrams and generated gallery
         shell: bash
         run: |
           set -euo pipefail
