@@ -1,5 +1,16 @@
 # Centralized Transit Gateway and Inspection VPC
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Transit Gateway Inspection Vpc](rendered/transit-gateway-inspection-vpc.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/transit-gateway-inspection-vpc.png) · [Editable Python source](../../architecture-diagrams/sources/transit-gateway-inspection-vpc.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 ![Source diagram](../diagrams/aws-icon/transit-gateway-inspection-vpc.puml)
 
 ## Case Study

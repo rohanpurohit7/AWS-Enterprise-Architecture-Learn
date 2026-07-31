@@ -1,5 +1,16 @@
 # Event-Driven Application Validation Runbook
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Developer Event Driven Platform](rendered/developer-event-driven-platform.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/developer-event-driven-platform.png) · [Editable Python source](../../architecture-diagrams/sources/developer-event-driven-platform.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 Architecture: `../diagrams/aws-icon/developer-event-driven-platform.puml`
 
 ## Objective

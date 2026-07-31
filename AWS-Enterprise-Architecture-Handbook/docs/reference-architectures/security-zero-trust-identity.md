@@ -1,5 +1,16 @@
 # Zero Trust Identity and Private Application Access
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Security Zero Trust Identity](rendered/security-zero-trust-identity.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/security-zero-trust-identity.png) · [Editable Python source](../../architecture-diagrams/sources/security-zero-trust-identity.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 Architecture: `../diagrams/aws-icon/security-zero-trust-identity.puml`
 
 ## Case Study

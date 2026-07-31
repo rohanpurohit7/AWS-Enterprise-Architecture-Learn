@@ -1,5 +1,16 @@
 # Bedrock Agent Safety and Operations Validation Runbook
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Bedrock Multi Agent Operations](rendered/bedrock-multi-agent-operations.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/bedrock-multi-agent-operations.png) · [Editable Python source](../../architecture-diagrams/sources/bedrock-multi-agent-operations.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 Visual architecture: `../diagrams/aws-icon/bedrock-multi-agent-operations.puml`
 
 ## Test Scenarios

@@ -1,5 +1,16 @@
 # Event-Driven Serverless Application Platform
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Developer Event Driven Platform](rendered/developer-event-driven-platform.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/developer-event-driven-platform.png) · [Editable Python source](../../architecture-diagrams/sources/developer-event-driven-platform.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 ## Case Study
 
 A digital service needs to accept API requests, execute asynchronous business workflows, persist application state, store generated documents, and recover safely from downstream failures without coupling every component into a synchronous request chain.

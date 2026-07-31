@@ -1,5 +1,16 @@
 # Serverless Data Lake Validation Runbook
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Serverless Data Lake Analytics](rendered/serverless-data-lake-analytics.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/serverless-data-lake-analytics.png) · [Editable Python source](../../architecture-diagrams/sources/serverless-data-lake-analytics.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 Architecture: `../diagrams/aws-icon/serverless-data-lake-analytics.puml`
 
 ## Validation Commands

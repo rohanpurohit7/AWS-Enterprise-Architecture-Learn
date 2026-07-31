@@ -1,5 +1,16 @@
 # Private Service Access with AWS PrivateLink
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Networking Private Service Access](rendered/networking-private-service-access.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/networking-private-service-access.png) · [Editable Python source](../../architecture-diagrams/sources/networking-private-service-access.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 Architecture: `../diagrams/aws-icon/networking-private-service-access.puml`
 
 ## Case Study

@@ -1,5 +1,16 @@
 # Centralized AWS Security Operations Center
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Security Specialty Central Soc](rendered/security-specialty-central-soc.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/security-specialty-central-soc.png) · [Editable Python source](../../architecture-diagrams/sources/security-specialty-central-soc.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 ## Case Study
 
 A regulated enterprise operates multiple AWS accounts for production, development, shared services, networking, and security. Leadership needs centralized visibility, faster investigation, consistent detection engineering, and controlled automated response without granting a single automation component unrestricted access to every workload.

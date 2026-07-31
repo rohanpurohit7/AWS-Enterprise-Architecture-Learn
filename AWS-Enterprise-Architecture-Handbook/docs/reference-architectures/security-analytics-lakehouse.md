@@ -1,5 +1,16 @@
 # Security Analytics Lakehouse with Streaming, SIEM, and ML
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Security Analytics Lakehouse](rendered/security-analytics-lakehouse.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/security-analytics-lakehouse.png) · [Editable Python source](../../architecture-diagrams/sources/security-analytics-lakehouse.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 Architecture: `../diagrams/aws-icon/security-analytics-lakehouse.puml`
 
 ## Case Study

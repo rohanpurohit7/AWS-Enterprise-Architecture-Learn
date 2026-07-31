@@ -1,5 +1,16 @@
 # Edge and Global Delivery Reference Architecture
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Edge Global Delivery](rendered/edge-global-delivery.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/edge-global-delivery.png) · [Editable Python source](../../architecture-diagrams/sources/edge-global-delivery.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 Architecture source: `../diagrams/aws-icon/edge-global-delivery.puml`
 
 ## Case Study

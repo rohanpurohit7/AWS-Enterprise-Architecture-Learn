@@ -1,5 +1,16 @@
 # PrivateLink Service Validation Runbook
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Networking Private Service Access](rendered/networking-private-service-access.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/networking-private-service-access.png) · [Editable Python source](../../architecture-diagrams/sources/networking-private-service-access.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 Visual architecture: `../diagrams/aws-icon/networking-private-service-access.puml`
 
 ## Provider Checks

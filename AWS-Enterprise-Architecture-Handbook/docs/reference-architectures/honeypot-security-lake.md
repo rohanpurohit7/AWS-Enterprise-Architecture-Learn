@@ -1,5 +1,16 @@
 # Isolated Honeypot and Security Lake Detection Platform
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Honeypot Security Lake](rendered/honeypot-security-lake.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/honeypot-security-lake.png) · [Editable Python source](../../architecture-diagrams/sources/honeypot-security-lake.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 ![Source diagram](../diagrams/aws-icon/honeypot-security-lake.puml)
 
 ## Case Study

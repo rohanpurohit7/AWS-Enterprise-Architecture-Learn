@@ -1,5 +1,16 @@
 # AWS Enterprise Architecture Documentation Index
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Transit Gateway Inspection Vpc](rendered/transit-gateway-inspection-vpc.png)
+
+[Central rendered asset](../architecture-diagrams/rendered/transit-gateway-inspection-vpc.png) · [Editable Python source](../architecture-diagrams/sources/transit-gateway-inspection-vpc.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 ## Rendered AWS Architecture Diagrams
 
 Use the [Rendered AWS Architecture Diagram Gallery](diagrams/README.md) for visual review.

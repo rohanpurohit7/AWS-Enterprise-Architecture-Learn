@@ -1,5 +1,16 @@
 # Hybrid DNS and Private Connectivity Reference Architecture
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Hybrid Dns Private Connectivity](rendered/hybrid-dns-private-connectivity.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/hybrid-dns-private-connectivity.png) · [Editable Python source](../../architecture-diagrams/sources/hybrid-dns-private-connectivity.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 Architecture source: `../diagrams/aws-icon/hybrid-dns-private-connectivity.puml`
 
 ## Case Study

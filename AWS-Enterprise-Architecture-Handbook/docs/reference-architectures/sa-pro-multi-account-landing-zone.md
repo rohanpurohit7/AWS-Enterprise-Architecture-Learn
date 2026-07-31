@@ -1,5 +1,16 @@
 # Multi-Account Landing Zone Reference Architecture
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Sa Pro Multi Account Landing Zone](rendered/sa-pro-multi-account-landing-zone.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/sa-pro-multi-account-landing-zone.png) · [Editable Python source](../../architecture-diagrams/sources/sa-pro-multi-account-landing-zone.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 Architecture: `../diagrams/aws-icon/sa-pro-multi-account-landing-zone.puml`
 
 ## Case Study

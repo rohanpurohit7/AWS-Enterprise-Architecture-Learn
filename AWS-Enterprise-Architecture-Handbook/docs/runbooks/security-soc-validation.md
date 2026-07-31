@@ -1,5 +1,16 @@
 # Central Security Operations Validation Runbook
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Security Specialty Central Soc](rendered/security-specialty-central-soc.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/security-specialty-central-soc.png) · [Editable Python source](../../architecture-diagrams/sources/security-specialty-central-soc.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 Architecture: `../diagrams/aws-icon/security-specialty-central-soc.puml`
 
 ## Objective

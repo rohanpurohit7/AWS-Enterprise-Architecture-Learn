@@ -1,5 +1,16 @@
 # Hybrid Networking and Inspection Validation Runbook
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Advanced Networking Hybrid Connectivity](rendered/advanced-networking-hybrid-connectivity.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/advanced-networking-hybrid-connectivity.png) · [Editable Python source](../../architecture-diagrams/sources/advanced-networking-hybrid-connectivity.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 Architecture: `../diagrams/aws-icon/advanced-networking-hybrid-connectivity.puml`
 
 ## Objective

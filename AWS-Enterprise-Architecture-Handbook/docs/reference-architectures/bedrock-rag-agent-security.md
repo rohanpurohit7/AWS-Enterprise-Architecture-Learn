@@ -1,5 +1,16 @@
 # Secure Bedrock RAG and Tool-Using Agent
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Bedrock Rag Agent Security](rendered/bedrock-rag-agent-security.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/bedrock-rag-agent-security.png) · [Editable Python source](../../architecture-diagrams/sources/bedrock-rag-agent-security.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 ![Source diagram](../diagrams/aws-icon/bedrock-rag-agent-security.puml)
 
 ## Case Study

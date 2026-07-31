@@ -1,0 +1,270 @@
+{
+  "architectures": [
+    {
+      "architecture": "advanced-networking-hybrid-connectivity",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/advanced-networking-hybrid-connectivity.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/advanced-networking-hybrid-connectivity.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/advanced-networking-hybrid-connectivity.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/hybrid-networking-validation.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/advanced-networking-hybrid-connectivity.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/advanced-networking-hybrid-connectivity.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/rendered/advanced-networking-hybrid-connectivity.png"
+      ]
+    },
+    {
+      "architecture": "bedrock-multi-agent-operations",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/bedrock-multi-agent-operations.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/bedrock-multi-agent-operations.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/diagrams/README.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/bedrock-multi-agent-operations.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/bedrock-agent-safety-validation.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/bedrock-multi-agent-operations.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/diagrams/rendered/bedrock-multi-agent-operations.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/bedrock-multi-agent-operations.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/rendered/bedrock-multi-agent-operations.png"
+      ]
+    },
+    {
+      "architecture": "bedrock-rag-agent-security",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/bedrock-rag-agent-security.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/bedrock-rag-agent-security.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/diagrams/README.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/bedrock-rag-agent-security.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/bedrock-rag-agent-security.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/diagrams/rendered/bedrock-rag-agent-security.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/bedrock-rag-agent-security.png"
+      ]
+    },
+    {
+      "architecture": "developer-event-driven-platform",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/developer-event-driven-platform.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/developer-event-driven-platform.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/developer-event-driven-platform.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/event-driven-platform-validation.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/developer-event-driven-platform.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/developer-event-driven-platform.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/rendered/developer-event-driven-platform.png"
+      ]
+    },
+    {
+      "architecture": "edge-global-delivery",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/edge-global-delivery.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/edge-global-delivery.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/edge-global-delivery.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/edge-global-delivery-validation.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/edge-global-delivery.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/edge-global-delivery.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/rendered/edge-global-delivery.png"
+      ]
+    },
+    {
+      "architecture": "global-multi-region-active-active",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/global-multi-region-active-active.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/global-multi-region-active-active.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/global-multi-region-active-active.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/global-multi-region-active-active.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/global-multi-region-active-active.png"
+      ]
+    },
+    {
+      "architecture": "honeypot-security-lake",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/honeypot-security-lake.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/honeypot-security-lake.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/honeypot-security-lake.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/honeypot-security-lake.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/honeypot-security-lake.png"
+      ]
+    },
+    {
+      "architecture": "hybrid-dns-private-connectivity",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/hybrid-dns-private-connectivity.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/hybrid-dns-private-connectivity.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/hybrid-dns-private-connectivity.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/hybrid-dns-private-connectivity-validation.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/hybrid-dns-private-connectivity.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/hybrid-dns-private-connectivity.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/rendered/hybrid-dns-private-connectivity.png"
+      ]
+    },
+    {
+      "architecture": "networking-private-service-access",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/networking-private-service-access.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/networking-private-service-access.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/networking-private-service-access.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/privatelink-service-validation.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/networking-private-service-access.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/networking-private-service-access.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/rendered/networking-private-service-access.png"
+      ]
+    },
+    {
+      "architecture": "sa-pro-disaster-recovery",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/sa-pro-disaster-recovery.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/sa-pro-disaster-recovery.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/sa-pro-disaster-recovery.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/disaster-recovery-game-day.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/sa-pro-disaster-recovery.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/sa-pro-disaster-recovery.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/rendered/sa-pro-disaster-recovery.png"
+      ]
+    },
+    {
+      "architecture": "sa-pro-multi-account-landing-zone",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/sa-pro-multi-account-landing-zone.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/sa-pro-multi-account-landing-zone.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/sa-pro-multi-account-landing-zone.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/multi-account-landing-zone-validation.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/sa-pro-multi-account-landing-zone.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/sa-pro-multi-account-landing-zone.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/rendered/sa-pro-multi-account-landing-zone.png"
+      ]
+    },
+    {
+      "architecture": "secure-multi-az-application",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/secure-multi-az-application.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/secure-multi-az-application.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/secure-multi-az-application.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/secure-multi-az-application.png"
+      ]
+    },
+    {
+      "architecture": "security-analytics-lakehouse",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/security-analytics-lakehouse.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/security-analytics-lakehouse.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/security-analytics-lakehouse.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/security-analytics-pipeline-validation.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/security-analytics-lakehouse.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/security-analytics-lakehouse.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/rendered/security-analytics-lakehouse.png"
+      ]
+    },
+    {
+      "architecture": "security-data-platform",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/security-data-platform.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/security-data-platform.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/diagrams/README.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/security-data-platform.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/diagrams/rendered/security-data-platform.png"
+      ]
+    },
+    {
+      "architecture": "security-specialty-central-soc",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/security-specialty-central-soc.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/security-specialty-central-soc.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/security-specialty-central-soc.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/security-soc-validation.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/security-specialty-central-soc.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/security-specialty-central-soc.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/rendered/security-specialty-central-soc.png"
+      ]
+    },
+    {
+      "architecture": "security-zero-trust-identity",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/security-zero-trust-identity.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/security-zero-trust-identity.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/diagrams/README.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/security-zero-trust-identity.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/zero-trust-identity-validation.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/security-zero-trust-identity.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/diagrams/rendered/security-zero-trust-identity.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/security-zero-trust-identity.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/rendered/security-zero-trust-identity.png"
+      ]
+    },
+    {
+      "architecture": "serverless-data-lake-analytics",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/serverless-data-lake-analytics.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/serverless-data-lake-analytics.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/diagrams/README.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/serverless-data-lake-analytics.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/serverless-data-lake-validation.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/serverless-data-lake-analytics.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/diagrams/rendered/serverless-data-lake-analytics.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/serverless-data-lake-analytics.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/runbooks/rendered/serverless-data-lake-analytics.png"
+      ]
+    },
+    {
+      "architecture": "transit-gateway-inspection-vpc",
+      "source": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/sources/transit-gateway-inspection-vpc.py",
+      "central_rendered_asset": "AWS-Enterprise-Architecture-Handbook/architecture-diagrams/rendered/transit-gateway-inspection-vpc.png",
+      "documents": [
+        "AWS-Enterprise-Architecture-Handbook/docs/INDEX.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/diagrams/README.md",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/transit-gateway-inspection-vpc.md"
+      ],
+      "local_rendered_assets": [
+        "AWS-Enterprise-Architecture-Handbook/docs/rendered/transit-gateway-inspection-vpc.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/diagrams/rendered/transit-gateway-inspection-vpc.png",
+        "AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/rendered/transit-gateway-inspection-vpc.png"
+      ]
+    }
+  ]
+}

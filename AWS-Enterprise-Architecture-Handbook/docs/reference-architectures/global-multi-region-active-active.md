@@ -1,5 +1,16 @@
 # Global Multi-Region Active-Active Application
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Global Multi Region Active Active](rendered/global-multi-region-active-active.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/global-multi-region-active-active.png) · [Editable Python source](../../architecture-diagrams/sources/global-multi-region-active-active.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 ![Source diagram](../diagrams/aws-icon/global-multi-region-active-active.puml)
 
 ## Case Study

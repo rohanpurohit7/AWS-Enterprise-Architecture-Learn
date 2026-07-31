@@ -1,5 +1,16 @@
 # Hybrid Enterprise Connectivity with Direct Connect, VPN, Transit Gateway, and Central Inspection
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Advanced Networking Hybrid Connectivity](rendered/advanced-networking-hybrid-connectivity.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/advanced-networking-hybrid-connectivity.png) · [Editable Python source](../../architecture-diagrams/sources/advanced-networking-hybrid-connectivity.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 ## Case Study
 A large enterprise connects on-premises data centers to multiple AWS workload VPCs while requiring resilient connectivity, centralized inspection, controlled egress, and shared network services.
 

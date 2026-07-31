@@ -1,5 +1,16 @@
 # Secure Multi-AZ Application Reference Architecture
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Secure Multi Az Application](rendered/secure-multi-az-application.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/secure-multi-az-application.png) · [Editable Python source](../../architecture-diagrams/sources/secure-multi-az-application.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 ![Architecture source](../diagrams/aws-icon/secure-vpc-reference.puml)
 
 ## Case Study

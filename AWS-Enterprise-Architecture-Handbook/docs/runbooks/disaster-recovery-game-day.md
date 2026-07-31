@@ -1,5 +1,16 @@
 # Multi-Region Disaster Recovery Game Day
 
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:START -->
+
+## Rendered Architecture Diagram
+
+![Sa Pro Disaster Recovery](rendered/sa-pro-disaster-recovery.png)
+
+[Central rendered asset](../../architecture-diagrams/rendered/sa-pro-disaster-recovery.png) · [Editable Python source](../../architecture-diagrams/sources/sa-pro-disaster-recovery.py)
+
+<!-- GENERATED_ARCHITECTURE_DIAGRAM:END -->
+
+
 Visual architecture: `../diagrams/aws-icon/sa-pro-disaster-recovery.puml`
 
 ## Objective
