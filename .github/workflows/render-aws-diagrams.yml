@@ -7,10 +7,14 @@ on:
       - master
     paths:
       - 'AWS-Enterprise-Architecture-Handbook/**'
+      - 'aws_diagram_nodes.py'
       - '.github/workflows/render-aws-diagrams.yml'
 
 permissions:
   contents: write
+
+env:
+  PYTHONPATH: ${{ github.workspace }}:${{ github.workspace }}/AWS-Enterprise-Architecture-Handbook
 
 jobs:
   render:
@@ -31,6 +35,10 @@ jobs:
           sudo apt-get install -y graphviz
           python -m pip install --upgrade pip
           pip install diagrams==0.24.4
+
+      - name: Validate compatibility module
+        run: |
+          python -c "import aws_diagram_nodes; print(aws_diagram_nodes.__file__)"
 
       - name: Validate discovered diagram imports
         shell: bash
