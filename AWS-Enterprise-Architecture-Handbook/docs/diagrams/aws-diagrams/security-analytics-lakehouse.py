@@ -1,8 +1,9 @@
 from diagrams import Cluster, Diagram, Edge
-from diagrams.aws.analytics import Athena, Glue, KinesisDataFirehose, OpenSearchService
+from diagrams.aws.analytics import Athena, Glue, KinesisDataFirehose
 from diagrams.aws.compute import Lambda
 from diagrams.aws.security import SecurityHub
 from diagrams.aws.storage import S3
+from aws_diagram_nodes import OpenSearchService
 
 OUT = "AWS-Enterprise-Architecture-Handbook/docs/diagrams/rendered/security-analytics-lakehouse"
 
