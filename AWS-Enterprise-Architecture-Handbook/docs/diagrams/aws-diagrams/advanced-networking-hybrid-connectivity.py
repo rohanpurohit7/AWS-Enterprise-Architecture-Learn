@@ -1,8 +1,8 @@
 from diagrams import Cluster, Diagram, Edge
-from diagrams.aws.network import DirectConnect, TransitGateway, VpnGateway, Route53Resolver
-from diagrams.aws.security import NetworkFirewall
+from diagrams.aws.network import DirectConnect, TransitGateway, VpnGateway
 from diagrams.onprem.network import Internet
 from diagrams.onprem.compute import Server
+from aws_diagram_nodes import NetworkFirewall, Route53Resolver
 
 OUT = "AWS-Enterprise-Architecture-Handbook/docs/diagrams/rendered/advanced-networking-hybrid-connectivity"
 
