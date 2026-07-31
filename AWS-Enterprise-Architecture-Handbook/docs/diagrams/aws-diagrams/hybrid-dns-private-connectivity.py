@@ -1,8 +1,9 @@
 from diagrams import Cluster, Diagram, Edge
 from diagrams.aws.compute import EC2
-from diagrams.aws.network import DirectConnect, Route53Resolver, TransitGateway, VpnGateway
+from diagrams.aws.network import DirectConnect, TransitGateway, VpnGateway
 from diagrams.onprem.compute import Server
 from diagrams.onprem.network import Internet
+from aws_diagram_nodes import Route53Resolver
 
 OUT = "AWS-Enterprise-Architecture-Handbook/docs/diagrams/rendered/hybrid-dns-private-connectivity"
 
