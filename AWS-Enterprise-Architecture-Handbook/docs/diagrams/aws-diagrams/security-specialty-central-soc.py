@@ -1,9 +1,9 @@
 from diagrams import Cluster, Diagram
-from diagrams.aws.analytics import OpenSearchService
 from diagrams.aws.integration import Eventbridge, SQS
 from diagrams.aws.management import Cloudtrail, Cloudwatch
 from diagrams.aws.security import Guardduty, Inspector, SecurityHub
 from diagrams.aws.storage import S3
+from aws_diagram_nodes import OpenSearchService
 
 OUT = "AWS-Enterprise-Architecture-Handbook/docs/diagrams/rendered/security-specialty-central-soc"
 
