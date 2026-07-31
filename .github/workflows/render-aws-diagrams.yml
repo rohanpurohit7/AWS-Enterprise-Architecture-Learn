@@ -111,6 +111,10 @@ jobs:
 
           root = Path('AWS-Enterprise-Architecture-Handbook')
           catalog = json.loads((root / 'architecture-diagrams' / 'catalog.json').read_text(encoding='utf-8'))
+          generated_galleries = {
+              (root / 'architecture-diagrams' / 'README.md').resolve(),
+              (root / 'docs' / 'diagrams' / 'README.md').resolve(),
+          }
           failures = []
           for item in catalog['architectures']:
               central = Path(item['central_rendered_asset'])
@@ -120,7 +124,10 @@ jobs:
                   if not Path(local).exists():
                       failures.append(f"Missing local image: {local}")
               for document in item['documents']:
-                  text = Path(document).read_text(encoding='utf-8')
+                  document_path = Path(document)
+                  if document_path.resolve() in generated_galleries:
+                      continue
+                  text = document_path.read_text(encoding='utf-8')
                   if 'GENERATED_ARCHITECTURE_DIAGRAM:START' not in text:
                       failures.append(f"Missing managed diagram block: {document}")
           if failures:
