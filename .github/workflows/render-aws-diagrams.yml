@@ -6,10 +6,7 @@ on:
     branches:
       - master
     paths:
-      - 'AWS-Enterprise-Architecture-Handbook/docs/reference-architectures/**'
-      - 'AWS-Enterprise-Architecture-Handbook/docs/diagrams/aws-diagrams/**'
-      - 'AWS-Enterprise-Architecture-Handbook/scripts/render_aws_diagrams.py'
-      - 'AWS-Enterprise-Architecture-Handbook/README.md'
+      - 'AWS-Enterprise-Architecture-Handbook/**'
       - '.github/workflows/render-aws-diagrams.yml'
 
 permissions:
@@ -35,7 +32,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install diagrams==0.24.4
 
-      - name: Validate every diagram import
+      - name: Validate discovered diagram imports
         shell: bash
         run: |
           set -euo pipefail
@@ -44,84 +41,99 @@ jobs:
           import importlib
           from pathlib import Path
 
-          root = Path('AWS-Enterprise-Architecture-Handbook/docs/diagrams/aws-diagrams')
+          root = Path('AWS-Enterprise-Architecture-Handbook')
+          canonical = root / 'architecture-diagrams'
           failures = []
+          sources = []
 
-          for path in sorted(root.glob('*.py')):
+          for path in sorted(root.rglob('*.py')):
+              if canonical in path.parents or path.name.startswith('__'):
+                  continue
+              lowered = {part.lower() for part in path.parts}
+              if not ({'aws-diagrams', 'architecture-diagrams', 'diagrams'} & lowered):
+                  continue
+              sources.append(path)
               tree = ast.parse(path.read_text(encoding='utf-8'), filename=str(path))
               for node in ast.walk(tree):
                   if isinstance(node, ast.ImportFrom) and node.module:
                       try:
                           module = importlib.import_module(node.module)
                       except Exception as exc:
-                          failures.append(f'{path}: cannot import module {node.module}: {exc}')
+                          failures.append(f'{path}: cannot import {node.module}: {exc}')
                           continue
                       for alias in node.names:
-                          if alias.name == '*':
-                              continue
-                          if not hasattr(module, alias.name):
+                          if alias.name != '*' and not hasattr(module, alias.name):
                               failures.append(f'{path}: {alias.name} not found in {node.module}')
 
+          if not sources:
+              failures.append('No architecture diagram Python sources discovered')
           if failures:
-              print('AWS diagram import validation failed:')
+              print('AWS architecture import validation failed:')
               for failure in failures:
                   print(f' - {failure}')
               raise SystemExit(1)
-
-          print('All AWS diagram imports validated successfully')
+          print(f'Validated imports for {len(sources)} architecture sources')
           PY
 
-      - name: Validate architecture documentation coverage
+      - name: Consolidate, render, and distribute architecture diagrams
+        run: python AWS-Enterprise-Architecture-Handbook/scripts/render_aws_diagrams.py
+
+      - name: Validate root and local publication coverage
         shell: bash
         run: |
           set -euo pipefail
+          ROOT='AWS-Enterprise-Architecture-Handbook'
+          CANON="$ROOT/architecture-diagrams"
+          source_count=$(find "$CANON/sources" -maxdepth 1 -type f -name '*.py' | wc -l)
+          root_png_count=$(find "$CANON/rendered" -maxdepth 1 -type f -name '*.png' | wc -l)
+          compatibility_png_count=$(find "$ROOT/docs/diagrams/rendered" -maxdepth 1 -type f -name '*.png' | wc -l)
+          echo "Root source count: $source_count"
+          echo "Root rendered count: $root_png_count"
+          echo "Compatibility rendered count: $compatibility_png_count"
+          test "$source_count" -gt 0
+          test "$root_png_count" -eq "$source_count"
+          test "$compatibility_png_count" -eq "$source_count"
+          test -f "$CANON/catalog.json"
+          test -f "$CANON/README.md"
+          test -f "$ROOT/docs/diagrams/README.md"
+          grep -q 'How GitHub Actions Builds and Publishes the Diagrams' "$CANON/README.md"
           python - <<'PY'
+          import json
           from pathlib import Path
 
           root = Path('AWS-Enterprise-Architecture-Handbook')
-          docs = root / 'docs' / 'reference-architectures'
-          sources = root / 'docs' / 'diagrams' / 'aws-diagrams'
-          article_stems = {p.stem for p in docs.glob('*.md')}
-          source_stems = {p.stem for p in sources.glob('*.py')}
-          missing = sorted(article_stems - source_stems)
-          if missing:
-              print('Reference architecture articles missing Python diagrams:')
-              for stem in missing:
-                  print(f' - {stem}.md -> expected {stem}.py')
+          catalog = json.loads((root / 'architecture-diagrams' / 'catalog.json').read_text(encoding='utf-8'))
+          failures = []
+          for item in catalog['architectures']:
+              central = Path(item['central_rendered_asset'])
+              if not central.exists():
+                  failures.append(f"Missing central image: {central}")
+              for local in item['local_rendered_assets']:
+                  if not Path(local).exists():
+                      failures.append(f"Missing local image: {local}")
+              for document in item['documents']:
+                  text = Path(document).read_text(encoding='utf-8')
+                  if 'GENERATED_ARCHITECTURE_DIAGRAM:START' not in text:
+                      failures.append(f"Missing managed diagram block: {document}")
+          if failures:
+              print('\n'.join(failures))
               raise SystemExit(1)
-          print(f'Architecture source coverage validated: {len(article_stems)}/{len(article_stems)}')
+          print(f"Validated {len(catalog['architectures'])} cataloged architectures")
           PY
 
-      - name: Render professional AWS architecture diagrams
-        run: python AWS-Enterprise-Architecture-Handbook/scripts/render_aws_diagrams.py
-
-      - name: Validate rendered outputs
+      - name: Commit root library and distributed diagrams
         shell: bash
         run: |
           set -euo pipefail
-          ROOT="AWS-Enterprise-Architecture-Handbook"
-          source_count=$(find "$ROOT/docs/diagrams/aws-diagrams" -maxdepth 1 -type f -name '*.py' | wc -l)
-          png_count=$(find "$ROOT/docs/diagrams/rendered" -maxdepth 1 -type f -name '*.png' | wc -l)
-          article_count=$(find "$ROOT/docs/reference-architectures" -maxdepth 1 -type f -name '*.md' | wc -l)
-          echo "Python architecture source count: $source_count"
-          echo "Reference architecture article count: $article_count"
-          echo "Rendered PNG count: $png_count"
-          test "$source_count" -gt 0
-          test "$png_count" -eq "$source_count"
-          test "$source_count" -ge "$article_count"
-          test -f "$ROOT/docs/diagrams/README.md"
-          grep -q 'How GitHub Actions Builds the Diagrams' "$ROOT/docs/diagrams/README.md"
-
-      - name: Commit rendered diagrams and generated gallery
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add AWS-Enterprise-Architecture-Handbook/docs/diagrams/rendered AWS-Enterprise-Architecture-Handbook/docs/diagrams/README.md
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add AWS-Enterprise-Architecture-Handbook/architecture-diagrams
+          git add AWS-Enterprise-Architecture-Handbook/docs/diagrams
+          find AWS-Enterprise-Architecture-Handbook -type d -name rendered -print0 | xargs -0 -r git add
+          git add 'AWS-Enterprise-Architecture-Handbook/**/*.md'
           if git diff --cached --quiet; then
-            echo "No rendered diagram changes to commit."
+            echo 'No generated architecture changes to commit.'
           else
-            git commit -m "docs: render AWS architecture diagrams [skip ci]"
+            git commit -m 'docs: publish centralized and local AWS architecture diagrams [skip ci]'
             git push
           fi
